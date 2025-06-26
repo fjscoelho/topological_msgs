@@ -28,6 +28,7 @@ rosidl_generate_interfaces(topological_msgs
   "msg/TopologicalMap.msg"
   "msg/TopologicalNode.msg"
   "msg/ViewTemplate.msg"
+  "msg/InfoExp.msg"
   DEPENDENCIES geometry_msgs std_msgs builtin_interfaces
  )
 
