@@ -1,2 +1,2 @@
 # topological_msgs
-This package implements custom messages for ratslam package.
+This package implements custom messages for the bioinspired algorithms.
