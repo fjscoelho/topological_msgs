@@ -11,4 +11,4 @@ uint32 src_id
 uint32 dest_id
 
 float64 relative_rad
-
+uint32 vt_id          # <-- ADICIONADO

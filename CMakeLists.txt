@@ -20,6 +20,7 @@ find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 # find_package(rclcpp REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(sensor_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
 
 rosidl_generate_interfaces(topological_msgs
@@ -31,7 +32,10 @@ rosidl_generate_interfaces(topological_msgs
   "msg/VisualFeatures.msg"
   "msg/BinaryFeatures.msg"
   "msg/SdrStamped.msg"
-  DEPENDENCIES geometry_msgs std_msgs builtin_interfaces
+  "msg/PlaceContext.msg"
+  "msg/PlaceContextMatch.msg"
+  "msg/KeyframeCloud.msg"
+  DEPENDENCIES geometry_msgs std_msgs sensor_msgs builtin_interfaces
  )
 
 ament_export_dependencies(rosidl_default_runtime)
